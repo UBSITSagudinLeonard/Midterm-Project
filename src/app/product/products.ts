@@ -3,8 +3,8 @@ import { products } from '../models/product.interface'; // Adjust path based on 
 
 @Component({
   selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  templateUrl: './products.html',
+  styleUrls: ['./products.css']
 })
 export class ProductsComponent {
   products: products[] = [
@@ -23,7 +23,7 @@ export class ProductsComponent {
   selectedProduct: products | null = null;
   showModal: boolean = false;
 
-  viewProductDetails(product: products): void {
+  viewProductDetails(product: Products): void {
     this.selectedProduct = product;
     this.showModal = true;
   }

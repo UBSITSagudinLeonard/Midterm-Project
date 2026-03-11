@@ -8,6 +8,7 @@ import { Interpolation } from './databinding/interpolation/interpolation';
 import { Property } from './databinding/property/property';
 import { Style } from './databinding/style/style';
 import { TwoWayBinding } from './databinding/two-way/two-way';
+import { ProductsComponent } from './product/products';
 
 
 export const routes: Routes = [{path: "home",
@@ -18,4 +19,5 @@ component: Home}, {path: "navi", component: Navi},
 {path: "interpolation", component: Interpolation}, 
 {path: "property", component: Property},
 {path: "style", component: Style},
-{path: "two-way", component: TwoWayBinding}];
+{path: "two-way", component: TwoWayBinding},
+{path: "products", component: ProductsComponent}];
